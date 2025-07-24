@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/cards', [CardController::class, 'index']);
 Route::post('/cards', [CardController::class, 'store']);
+Route::post('/cards/check', [CardController::class, 'check']);
