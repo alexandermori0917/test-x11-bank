@@ -1,0 +1,6 @@
+.button {
+    @apply border-2 border-primary-100 rounded-[10px] p-1 cursor-pointer;
+    .inner {
+        @apply w-[116px] h-20 bg-light-200 rounded-lg p-2 flex flex-col items-center justify-end text-dark-200 text-[14px] leading-[22px] font-semibold;
+    }
+}

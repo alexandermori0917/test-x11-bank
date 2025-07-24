@@ -1,0 +1,34 @@
+.card {
+    @apply w-full h-[310px] md:h-[208px] relative;
+    .card__grey {
+        @apply w-full h-full md:h-[200px] absolute z-10 bg-light-100 rounded-xl right-0 bottom-0 md:bottom-1 p-5 flex flex-col;
+        .bar {
+            @apply h-10 bg-dark-400 -mx-5;
+        }
+        .container {
+            @apply relative flex-1;
+            .info {
+                @apply absolute bottom-0 left-0 md:left-auto md:right-0 w-[184px] md:w-[104px];
+                .label {
+                    @apply text-dark-200 text-xs uppercase;
+                }
+                .help {
+                    @apply text-[10px] leading-[14px] text-dark-300;
+                }
+            }
+        }
+    }
+    .card_blue {
+        @apply w-full h-[208px] md:w-[324px] z-20 relative text-light-400 rounded-xl p-5 flex flex-col justify-end gap-2 overflow-hidden;
+        background: linear-gradient(135deg, #a6c8ff 0%, #0043ce 100%);
+        .label {
+            @apply text-light-400 text-xs uppercase;
+        }
+    }
+    .input {
+        @apply bg-light-300 border border-light-50 rounded-lg focus:outline-none focus:ring-0 text-dark-300 text-[16px] leading-5 w-[72px];
+    }
+    .error {
+        @apply border border-red-700;
+    }
+}

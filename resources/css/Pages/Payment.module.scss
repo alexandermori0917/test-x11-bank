@@ -1,0 +1,34 @@
+.container {
+    @apply px-4 pt-[34px] pb-[60px] flex justify-center;
+    .form {
+        @apply w-full max-w-[550px] bg-light-400 md:p-10 md:rounded-xl md:border md:border-light-200 max-md:shadow-none !important;
+        box-shadow: 0px 8px 16px 0px #55577029, 0px 2px 4px 0px #28293d0a;
+        .title {
+            @apply font-medium text-[22px] leading-[28px] text-dark-100 md:text-[24px] md:leading-[32px];
+        }
+        .label {
+            @apply text-xs uppercase text-dark-200 mt-[30px] block;
+        }
+        .amountRow {
+            @apply bg-light-300 border border-light-50 rounded-lg w-full max-w-[288px] grid grid-cols-2 mt-2;
+            .amountAr {
+                @apply border-r border-r-light-50 p-4 flex items-center gap-[18px];
+            }
+            .amountRu {
+                @apply p-4 flex items-center gap-[18px];
+            }
+            .inputAmount {
+                @apply w-full bg-transparent outline-none text-dark-300 p-0 border-none focus:outline-none focus:border-none focus:ring-0 placeholder:text-dark-300 text-[16px] leading-5;
+            }
+        }
+        .cards {
+            @apply mt-6 flex flex-wrap items-center gap-2 md:gap-4;
+        }
+        .card {
+            @apply mt-6;
+        }
+        .error {
+            @apply border border-red-700;
+        }
+    }
+}
