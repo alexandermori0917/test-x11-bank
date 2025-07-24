@@ -1,0 +1,11 @@
+.header {
+    @apply bg-light-400 h-[88px];
+    box-shadow: 0px 1px 4px 0px #e4e4eb;
+}
+.main {
+    @apply flex-1;
+}
+.footer {
+    @apply bg-light-300 h-20;
+    box-shadow: 0px -1px 0px 0px #e4e4eb;
+}
